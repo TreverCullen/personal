@@ -1,0 +1,97 @@
+body{
+	width: 100%;
+}
+
+
+.center{text-align: center; }
+.right{	text-align: right; }
+#red{ 	color: red; }
+i{ 	font-size: 1.3rem; }
+
+
+/* Main Page 
+----------------------------------------*/
+h2{
+	padding-top: 25vh;
+	text-align: center;
+}
+.cover-icon{
+	height: 70px;
+	width: auto;
+	overflow: hidden;
+}
+.cover-image{
+	display: none;
+	margin: 0 auto;
+	height: auto;
+	width: 200px;
+	border-radius: 20px;
+	background: url(static/me.png) no-repeat center center;
+	background-size: 100%;
+}
+
+
+/* Navigation (and footer links) 
+----------------------------------------*/
+nav{
+	display: block;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 100;
+
+	background: white;
+	text-align: center;
+	transition: 0.3s;
+}
+nav a, footer a{
+	display: inline-block;
+	padding: 20px;
+	text-decoration: none;
+	color: inherit;
+}
+
+
+/* List Items
+----------------------------------------*/
+li{
+	list-style-position: inside;
+	text-indent: -1em;
+	padding-left: 1em;
+}
+ul{
+	margin-bottom: 1rem;
+	margin-left: 1.5rem;
+}
+ul li{
+	margin-bottom: 0rem;
+}
+ul ul{
+	margin-top: 0rem;
+	margin-bottom: 0rem;
+}
+
+
+/* Project Section
+----------------------------------------*/
+.project{
+	background: #eee;
+	border-radius: 4px;
+	padding: 1rem;
+}
+
+
+/* Media Queries 
+----------------------------------------*/
+@media (min-width: 480px) {
+	nav{
+		display: block;
+	}
+	.cover-image{
+		display: block;
+		margin-top: -100px;
+	}
+}
+
+
